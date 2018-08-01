@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.buzzshelter">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".UserAppActivity" />
+        <activity android:name=".UserTypeActivity" />
+        <activity android:name=".RegistrationAdminActivity" />
+        <activity
+            android:name=".ShelterListView"
+            android:label="@string/title_activity_shelter_list_view"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".ShelterView"
+            android:label="@string/title_activity_shelter_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdvancedSearchView"
+            android:label="@string/title_activity_advanced_search_view"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".AdvancedListView"
+            android:label="@string/title_activity_advanced_list_view"
+            android:theme="@style/NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAxswYRBtsXRdoe23LzlOZh2h1jaYiJtTs" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+
+        <activity
+            android:name=".MapSearchActivity"
+            android:label="MapSearchActivity"></activity>
+    </application>
+
+</manifest>
